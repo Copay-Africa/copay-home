@@ -124,4 +124,92 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Mobile-first responsive improvements */
+  html {
+    /* Enable smooth scrolling */
+    scroll-behavior: smooth;
+    /* Optimize text rendering on mobile */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Better touch interactions */
+    touch-action: manipulation;
+  }
+  
+  /* Improve tap targets on mobile */
+  button, a, [role="button"] {
+    @apply touch-manipulation;
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better focus indicators for keyboard navigation */
+  button:focus-visible, 
+  a:focus-visible, 
+  [role="button"]:focus-visible {
+    @apply outline-2 outline-copay-green outline-offset-2;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* Improve text readability on mobile */
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  p {
+    text-wrap: pretty;
+    max-width: 70ch;
+  }
+  
+  /* Better mobile viewport handling */
+  .mobile-safe-area {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  /* Disable horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  /* Improve mobile menu animations */
+  @keyframes slideInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slideInFromTop 0.3s ease-out;
+  }
+  
+  /* Custom scrollbar for better mobile experience */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(22, 163, 74, 0.3);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(22, 163, 74, 0.5);
+  }
 }
