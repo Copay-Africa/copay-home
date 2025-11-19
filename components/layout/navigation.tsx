@@ -27,7 +27,7 @@ export function Navigation() {
                         <a href="#team" className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors text-sm lg:text-base font-medium py-2 px-1">Team</a>
                         <a href="#download" className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors text-sm lg:text-base font-medium py-2 px-1">Download</a>
                         <ThemeToggle />
-                        <Button asChild className="bg-copay-green hover:bg-green-700 text-white px-4 lg:px-6 py-2 text-sm lg:text-base">
+                        <Button asChild className="bg-copay-green hover:bg-[#026055] text-white px-4 lg:px-6 py-2 text-sm lg:text-base font-medium rounded-lg">
                             <a href="#download">Get Started</a>
                         </Button>
                     </div>
@@ -77,7 +77,7 @@ export function Navigation() {
                             >
                                 Download
                             </a>
-                            <Button asChild className="w-full bg-copay-green hover:bg-green-700 text-white mt-4 py-4 text-base font-medium min-h-12 touch-manipulation">
+                            <Button asChild className="w-full bg-copay-green hover:bg-[#026055] text-white mt-4 py-4 text-base font-medium min-h-12 touch-manipulation rounded-lg">
                                 <a href="#download" onClick={() => setIsOpen(false)}>Get Started</a>
                             </Button>
                         </div>

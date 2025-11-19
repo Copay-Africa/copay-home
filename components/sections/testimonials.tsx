@@ -37,14 +37,14 @@ export function TestimonialsSection() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-background dark:bg-card border-0 shadow-lg">
+            <Card key={index} className="bg-background dark:bg-card border border-gray-200 dark:border-gray-800 rounded-[20px]">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-copay-green text-copay-green" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-muted-foreground mb-6 italic">&ldquo;{testimonial.content}&rdquo;</p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-gradient-to-r from-copay-green to-blue-600 rounded-full flex items-center justify-center mr-3">
                     <span className="text-white text-sm font-bold">{testimonial.name.split(' ').map(n => n[0]).join('')}</span>

@@ -36,7 +36,7 @@ export function HowItWorksSection() {
                     {steps.map((step, index) => {
                         const IconComponent = step.icon;
                         return (
-                            <Card key={index} className="bg-background dark:bg-card border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <Card key={index} className="bg-background dark:bg-card border border-gray-200 dark:border-gray-800 rounded-[20px] transition-all duration-300">
                                 <CardContent className="p-8 text-center">
                                     <div className="w-16 h-16 bg-copay-green/10 dark:bg-copay-green/20 rounded-full flex items-center justify-center mx-auto mb-6">
                                         <IconComponent className="h-8 w-8 text-copay-green" />

@@ -15,7 +15,7 @@ export function FeaturesSection() {
     {
       icon: Users,
       title: "Community Focus",
-      description: "Built for cooperative communities"
+      description: "Built for copay team"
     },
     {
       icon: CheckCircle,
@@ -32,7 +32,7 @@ export function FeaturesSection() {
             Why Choose Copay?
           </h2>
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto px-4 sm:px-6 leading-relaxed">
-            Built specifically for cooperative communities with security and simplicity in mind
+            Built specifically for copay team with security and simplicity in mind
           </p>
         </div>
         
@@ -41,7 +41,7 @@ export function FeaturesSection() {
             const IconComponent = feature.icon;
             return (
               <div key={index} className="text-center group hover:scale-105 transition-all duration-300 p-4 sm:p-6 rounded-2xl hover:bg-gray-50 dark:hover:bg-gray-900/50">
-                <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 bg-copay-green rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 bg-copay-green rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
                   <IconComponent className="h-8 w-8 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-white" />
                 </div>
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-black dark:text-white mb-3 sm:mb-4">{feature.title}</h3>

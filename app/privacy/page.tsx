@@ -4,7 +4,6 @@ import { Navigation } from "@/components/layout/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Eye, UserCheck, Lock, Database, Globe } from "lucide-react";
-import Link from "next/link";
 
 export default function PrivacyPolicy() {
     return (
@@ -15,8 +14,8 @@ export default function PrivacyPolicy() {
             {/* Header */}
             <section className="bg-gradient-to-b from-[#F8FAFC] dark:from-gray-900 to-white dark:to-black py-12 sm:py-16 lg:py-24">
                 <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-8 text-center">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#16A34A]/10 dark:bg-[#16A34A]/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 lg:mb-8">
-                        <Shield className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-[#16A34A]" />
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-[#027e6f]/10 dark:bg-[#027e6f]/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 lg:mb-8">
+                        <Shield className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 text-[#027e6f]" />
                     </div>
                     <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#0F172B] dark:text-white mb-3 sm:mb-4 lg:mb-8 leading-tight px-1 sm:px-2 lg:px-0">
                         Privacy Policy
@@ -51,8 +50,8 @@ export default function PrivacyPolicy() {
                     {/* Data We Collect */}
                     <div className="mb-12 sm:mb-16">
                         <div className="flex items-center mb-6 sm:mb-8 px-1">
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
-                                <Database className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <Database className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                             </div>
                             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172B]">Information We Collect</h2>
                         </div>
@@ -89,8 +88,8 @@ export default function PrivacyPolicy() {
                     {/* How We Use Your Data */}
                     <div className="mb-12 sm:mb-16">
                         <div className="flex items-center mb-6 sm:mb-8 px-1">
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
-                                <UserCheck className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <UserCheck className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                             </div>
                             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172B]">How We Use Your Information</h2>
                         </div>
@@ -126,8 +125,8 @@ export default function PrivacyPolicy() {
                     {/* Data Protection */}
                     <div className="mb-12 sm:mb-16">
                         <div className="flex items-center mb-6 sm:mb-8 px-1">
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
-                                <Lock className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <Lock className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                             </div>
                             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172B]">Data Protection & Security</h2>
                         </div>
@@ -135,8 +134,8 @@ export default function PrivacyPolicy() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                             <Card className="border-0 shadow-lg">
                                 <CardContent className="p-4 sm:p-6 text-center">
-                                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                        <Shield className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                                        <Shield className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                                     </div>
                                     <h3 className="text-base sm:text-lg font-semibold text-[#0F172B] mb-2 sm:mb-3">Encryption</h3>
                                     <p className="text-gray-600 text-xs sm:text-sm">
@@ -147,8 +146,8 @@ export default function PrivacyPolicy() {
 
                             <Card className="border-0 shadow-lg">
                                 <CardContent className="p-4 sm:p-6 text-center">
-                                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                        <Lock className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                                        <Lock className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                                     </div>
                                     <h3 className="text-base sm:text-lg font-semibold text-[#0F172B] mb-2 sm:mb-3">Access Control</h3>
                                     <p className="text-gray-600 text-xs sm:text-sm">
@@ -159,8 +158,8 @@ export default function PrivacyPolicy() {
 
                             <Card className="border-0 shadow-lg sm:col-span-2 lg:col-span-1">
                                 <CardContent className="p-4 sm:p-6 text-center">
-                                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                        <Eye className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                                    <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                                        <Eye className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                                     </div>
                                     <h3 className="text-base sm:text-lg font-semibold text-[#0F172B] mb-2 sm:mb-3">Monitoring</h3>
                                     <p className="text-gray-600 text-xs sm:text-sm">
@@ -174,8 +173,8 @@ export default function PrivacyPolicy() {
                     {/* Data Sharing */}
                     <div className="mb-12 sm:mb-16">
                         <div className="flex items-center mb-6 sm:mb-8 px-1">
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#16A34A]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
-                                <Globe className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#16A34A]" />
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-[#027e6f]/10 rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <Globe className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-[#027e6f]" />
                             </div>
                             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#0F172B]">Data Sharing & Disclosure</h2>
                         </div>
@@ -187,28 +186,28 @@ export default function PrivacyPolicy() {
                                 </p>
                                 <div className="space-y-3 sm:space-y-4">
                                     <div className="flex items-start">
-                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#16A34A] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
+                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#027e6f] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
                                         <div>
                                             <h4 className="font-semibold text-[#0F172B] text-sm sm:text-base">Payment Processing</h4>
                                             <p className="text-gray-600 text-xs sm:text-sm">With trusted payment partners like IremboPay to facilitate transactions</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
-                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#16A34A] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
+                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#027e6f] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
                                         <div>
                                             <h4 className="font-semibold text-[#0F172B] text-sm sm:text-base">Legal Compliance</h4>
                                             <p className="text-gray-600 text-xs sm:text-sm">When required by law, regulation, or court order</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
-                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#16A34A] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
+                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#027e6f] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
                                         <div>
                                             <h4 className="font-semibold text-[#0F172B] text-sm sm:text-base">Service Providers</h4>
                                             <p className="text-gray-600 text-xs sm:text-sm">With vetted third-party service providers under strict confidentiality agreements</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
-                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#16A34A] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
+                                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#027e6f] rounded-full mt-1.5 sm:mt-2 mr-2 sm:mr-3 flex-shrink-0"></div>
                                         <div>
                                             <h4 className="font-semibold text-[#0F172B] text-sm sm:text-base">Fraud Prevention</h4>
                                             <p className="text-gray-600 text-xs sm:text-sm">To protect against fraud and ensure platform security</p>
@@ -252,14 +251,14 @@ export default function PrivacyPolicy() {
 
                     {/* Contact Information */}
                     <div className="mb-12 sm:mb-16">
-                        <Card className="bg-gradient-to-r from-[#16A34A] to-blue-600 border-0 shadow-lg">
+                        <Card className="bg-gradient-to-r from-[#027e6f] to-blue-600 border-0 shadow-lg">
                             <CardContent className="p-6 sm:p-8 text-center text-white">
                                 <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Questions About Your Privacy?</h2>
                                 <p className="mb-4 sm:mb-6 opacity-90 text-sm sm:text-base">
                                     Our privacy team is here to help you understand how we protect your data.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                                    <Button className="bg-white text-[#16A34A] hover:bg-gray-100 rounded-full text-sm sm:text-base px-4 sm:px-6">
+                                    <Button className="bg-white text-[#027e6f] hover:bg-gray-100 rounded-full text-sm sm:text-base px-4 sm:px-6">
                                         Contact Privacy Team
                                     </Button>
                                     <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-full text-sm sm:text-base px-4 sm:px-6">

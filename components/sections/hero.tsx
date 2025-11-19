@@ -22,7 +22,7 @@ const heroSlides = [
         badge: "Community Focused",
         title: "Built for",
         highlight: "Cooperatives",
-        description: "Designed specifically for cooperative communities with features that strengthen financial management and member engagement across all payment channels.",
+        description: "Designed specifically for copay team with features that strengthen financial management and member engagement across all payment channels.",
         primaryButton: "Join Community",
         secondaryButton: "Learn More",
         backgroundImage: "https://images.unsplash.com/photo-1741991110666-88115e724741?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -94,13 +94,13 @@ export function HeroSection() {
                                         {slide.description}
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
-                                        <Button asChild className="bg-copay-green hover:bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold shadow-xl backdrop-blur-sm w-full sm:w-auto min-h-11 touch-manipulation">
+                                        <Button asChild className="bg-copay-green hover:bg-[#026055] text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold backdrop-blur-sm w-full sm:w-auto min-h-11 touch-manipulation rounded-lg">
                                             <a href="#download" aria-label={`${slide.primaryButton} - Navigate to downloads`}>
                                                 {slide.primaryButton}
                                                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                                             </a>
                                         </Button>
-                                        <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto min-h-11 touch-manipulation" aria-label={`${slide.secondaryButton} - Learn more`}>
+                                        <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto min-h-11 touch-manipulation rounded-lg bg-transparent" aria-label={`${slide.secondaryButton} - Learn more`}>
                                             <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                                             {slide.secondaryButton}
                                         </Button>
@@ -128,26 +128,6 @@ export function HeroSection() {
             >
                 <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
             </button>
-
-            {/* Slide Indicators */}
-            <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 sm:space-x-3 z-10">
-                {heroSlides.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setCurrentSlide(index)}
-                        className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 backdrop-blur-sm touch-manipulation min-h-11 min-w-11 flex items-center justify-center ${index === currentSlide
-                            ? 'bg-copay-green scale-125 shadow-lg'
-                            : 'bg-white/50 hover:bg-white/70'
-                            }`}
-                        aria-label={`Go to slide ${index + 1}`}
-                    >
-                        <span className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${index === currentSlide
-                            ? 'bg-copay-green'
-                            : 'bg-white/50'
-                            }`} />
-                    </button>
-                ))}
-            </div>
 
             {/* Progress Bar */}
             <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">

@@ -2,12 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function TeamSection() {
   const teamMembers = [
-    { name: "John Uwimana", role: "CEO & Founder", description: "10+ years in fintech and cooperative development" },
-    { name: "Marie Mukamana", role: "CTO", description: "Expert in mobile payments and security systems" },
-    { name: "David Nkurunziza", role: "Head of Product", description: "Specialized in user experience and community engagement" },
-    { name: "Grace Ingabire", role: "Lead Developer", description: "Full-stack engineer with payment platform expertise" },
-    { name: "Paul Habimana", role: "Operations Manager", description: "Cooperative management and customer success specialist" },
-    { name: "Claudine Uwera", role: "Marketing Director", description: "Community outreach and digital marketing expert" }
+    { name: "John Uwimana", role: "CEO & Founder", description: "10+ years in fintech and cooperative development", image: "/images/team/john.jpg" },
+    { name: "Marie Mukamana", role: "CTO", description: "Expert in mobile payments and security systems", image: "/images/team/marie.jpg" },
+    { name: "David Nkurunziza", role: "Head of Product", description: "Specialized in user experience and community engagement", image: "/images/team/david.jpg" },
   ];
 
   return (
@@ -21,14 +18,19 @@ export function TeamSection() {
             Passionate experts dedicated to revolutionizing cooperative payments
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="bg-background dark:bg-card border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-6 text-center">
-                <div className="w-24 h-24 bg-gradient-to-r from-copay-green to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-xl font-bold">{member.name.split(' ').map(n => n[0]).join('')}</span>
+            <Card key={index} className="bg-background dark:bg-card border border-gray-200 dark:border-gray-800 rounded-[20px] transition-all duration-300 overflow-hidden">
+              <div className="relative h-48 bg-gradient-to-br from-copay-green/10 to-blue-600/10">
+                <div className="absolute inset-0 bg-gradient-to-r from-copay-green/20 to-blue-600/20"></div>
+                <div className="relative h-full flex items-center justify-center">
+                  <div className="w-20 h-20 bg-gradient-to-r from-copay-green to-blue-600 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xl font-bold">{member.name.split(' ').map(n => n[0]).join('')}</span>
+                  </div>
                 </div>
+              </div>
+              <CardContent className="p-6 text-center">
                 <h3 className="text-lg font-semibold text-copay-primary dark:text-foreground mb-1">{member.name}</h3>
                 <p className="text-copay-green font-medium mb-3">{member.role}</p>
                 <p className="text-muted-foreground text-sm">{member.description}</p>
