@@ -6,15 +6,9 @@ import { ArrowRight, Play, CheckCircle } from "lucide-react";
 
 export function HeroSection() {
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden px-4 sm:px-0">
-            {/* Background Image */}
-            <div className="absolute inset-0">
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
-                    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1687986261123-b17f08f2796c?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#006F4F]/30 via-black/20 to-[#212121]/40"></div>
-            </div>
+        <section className="relative min-h-screen flex items-center overflow-hidden px-4 sm:px-0 py-24">
+            {/* Background Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#2d5a3d] via-[#1a3d2e] to-[#0f1419]"></div>
             
             {/* Background Elements - Hidden on mobile for performance */}
             <div className="absolute inset-0 z-5 hidden md:block">
@@ -22,7 +16,7 @@ export function HeroSection() {
                 <div className="absolute bottom-10 sm:bottom-20 right-4 sm:right-10 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-br from-[#FF6A30]/20 to-[#006F4F]/20 rounded-full blur-3xl"></div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">                    {/* Left Content */}
                     <div className="text-center lg:text-left px-4 sm:px-0">
                         <Badge className="mb-4 sm:mb-6 bg-white/20 text-white border-white/30 font-semibold px-3 sm:px-4 py-2 rounded-full inline-flex items-center gap-2 backdrop-blur-sm text-sm sm:text-base">
@@ -36,8 +30,8 @@ export function HeroSection() {
                         </h1>
 
                         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
-                            Instant payments. Zero hassle. Complete control.
-                            <span className="block mt-2 text-[#FF6A30] font-semibold">Your money, simplified.</span>
+                            Instant payments. Business stay working. Complete control.
+                            <span className="block mt-2 text-[#30ffb0] font-semibold">Your money, simplified.</span>
                         </p>
                         
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-12">
