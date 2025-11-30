@@ -13,7 +13,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <HowItWorksSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <DownloadsSection />
       <TestimonialsSection />
       <CTASection />
